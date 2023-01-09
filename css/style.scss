@@ -114,14 +114,99 @@ video {
     display: flex;
     align-items: center;
     justify-content: space-between;
+
+    &--4 {
+      width: 50%;
+      padding: 4rem;
+
+      align-self: center;
+      display: flex;
+      flex-direction: column;
+      row-gap: 2rem;
+    }
   }
 
   &__text-box {
     width: 45%;
     color: $color-grey;
+
+    display: flex;
+    flex-direction: column;
+    row-gap: 2rem;
   }
 
   &__photo {
     width: 40%;
   }
+
+  &__btn {
+    &:link,
+    &:visited {
+      background-color: $color-pink;
+      text-decoration: none;
+      color: #fff;
+      font-size: 1.5rem;
+      border-radius: 100rem;
+      padding: 1.5rem 6rem;
+      box-shadow: 0 0.5rem 0.75rem rgba($color-grey, 0.4);
+    }
+  }
+}
+
+.footer {
+  background-color: $color-cyan-dark;
+  color: #fff;
+  padding: 10rem 4rem 4rem;
+
+  display: flex;
+  flex-direction: column;
+  row-gap: 2rem;
+
+  &__main {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__details {
+    width: 30%;
+
+    display: flex;
+    flex-direction: column;
+    row-gap: 2rem;
+  }
+
+  &__box {
+    display: flex;
+    column-gap: 2rem;
+  }
+
+  &__photo-icon {
+    width: 2rem;
+    height: 2rem;
+  }
+
+  &__menu {
+    width: 30%;
+  }
+
+  &__menu-box {
+    list-style: none;
+
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 2rem;
+    align-content: center;
+  }
+
+  &__socials {
+    width: 30%;
+  }
+
+  &__copyright {
+    align-self: flex-end;
+  }
+}
+
+.heading {
+  color: $color-cyan-dark;
 }
